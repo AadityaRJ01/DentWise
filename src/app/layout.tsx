@@ -6,6 +6,7 @@ import { ClerkProvider } from "@clerk/nextjs";
 // import TanStackProvider from "@/components/providers/TanStackProvider";
 import { Toaster } from "sonner";
 import UserSync from "@/components/UserSync";
+import TanStackProvider from "@/components/providers/TanStackProvider";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -29,7 +30,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    // <TanStackProvider>
+    <TanStackProvider>
       <ClerkProvider
         appearance={{
           variables: {
@@ -50,6 +51,6 @@ export default function RootLayout({
           </body>
         </html>
       </ClerkProvider>
-    // </TanStackProvider>
+     </TanStackProvider>
   );
 }
