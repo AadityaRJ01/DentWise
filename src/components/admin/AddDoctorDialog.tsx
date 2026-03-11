@@ -1,9 +1,20 @@
-import { useState } from "react";
+import { useCreateDoctor } from "@/hooks/use-doctors";
 import { Gender } from "@prisma/client";
-import { Dialog, Label } from "radix-ui";
-import { DialogContent, DialogHeader } from "../ui/dialog";
-import { DialogDescription, DialogTitle, Input, Select } from "@base-ui/react";
-import { SelectContent, SelectItem, SelectTrigger, SelectValue } from "../ui/select";
+import { useState } from "react";
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogFooter,
+  DialogHeader,
+  DialogTitle,
+} from "../ui/dialog";
+import { Label } from "../ui/label";
+import { Input } from "../ui/input";
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "../ui/select";
+import { Button } from "../ui/button";
+import { formatPhoneNumber } from "@/lib/utils";
+
 
 
 interface AddDoctorDialogProps {
@@ -12,6 +23,7 @@ interface AddDoctorDialogProps {
 }
 
 function AddDoctorDialog({ isOpen, onClose }: AddDoctorDialogProps) {
+  const createDoctorMutation = useCreateDoctor();
   const [newDoctor, setNewDoctor] = useState({
     name: "",
     email: "",
@@ -21,6 +33,26 @@ function AddDoctorDialog({ isOpen, onClose }: AddDoctorDialogProps) {
     isActive: true,
   });
 
+
+ const handlePhoneChange = (value: string) => {
+    const formattedPhoneNumber = formatPhoneNumber(value);
+    setNewDoctor({ ...newDoctor, phone: formattedPhoneNumber });
+  };
+  const handleSave = () => {
+    createDoctorMutation.mutate({ ...newDoctor }, { onSuccess: handleClose });
+  };
+
+const handleClose = () => {
+    onClose();
+    setNewDoctor({
+      name: "",
+      email: "",
+      phone: "",
+      speciality: "",
+      gender: "MALE",
+      isActive: true,
+    });
+  };
   return (
     <Dialog open={isOpen} onOpenChange={handleClose}>
       <DialogContent className="sm:max-w-[500px]">
@@ -108,7 +140,7 @@ function AddDoctorDialog({ isOpen, onClose }: AddDoctorDialogProps) {
           </div>
         </div>
 
-        {/* <DialogFooter>
+        <DialogFooter>
           <Button variant="outline" onClick={handleClose}>
             Cancel
           </Button>
@@ -125,7 +157,7 @@ function AddDoctorDialog({ isOpen, onClose }: AddDoctorDialogProps) {
           >
             {createDoctorMutation.isPending ? "Adding..." : "Add Doctor"}
           </Button>
-        </DialogFooter> */}
+        </DialogFooter>
       </DialogContent>
     </Dialog>
   );
