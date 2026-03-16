@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 "use server";
 import { prisma } from "../prisma";
 import { auth } from "@clerk/nextjs/server";
@@ -12,6 +13,10 @@ function transformAppointment(appointment: any) {
     date: appointment.date.toISOString().split("T")[0],
   };
 }
+=======
+import { prisma } from "../prisma";
+
+>>>>>>> 9bbfbc768bba445e1bd1fd871e369ff96fef65b3
 
 export async function getAppointments() {
   try {
@@ -34,6 +39,7 @@ export async function getAppointments() {
     console.log("Error fetching appointments:", error);
     throw new Error("Failed to fetch appointments");
   }
+<<<<<<< HEAD
 }
 
 export async function getUserAppointments() {
@@ -92,4 +98,6 @@ export async function getUserAppointmentStats() {
     console.error("Error fetching user appointment stats:", error);
     return { totalAppointments: 0, completedAppointments: 0 };
   }
+=======
+>>>>>>> 9bbfbc768bba445e1bd1fd871e369ff96fef65b3
 }
