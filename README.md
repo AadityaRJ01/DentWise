@@ -1,36 +1,179 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🦷 DentWise – AI-Powered Dental Management System
 
-## Getting Started
+DentWise is a full-stack AI-powered dental management platform that helps clinics manage appointments, automate workflows, and improve patient experience.
 
-First, run the development server:
+---
+
+## 🌐 Live Demo
+
+🔗 https://your-live-link.com
+
+---
+
+## 💡 Problem Statement
+
+Managing dental clinics manually leads to inefficiencies in scheduling, patient communication, and billing.
+
+DentWise solves this by providing an automated, scalable, and intelligent system for modern clinics.
+
+---
+
+## 🚀 Features
+
+* 🧑‍⚕️ Patient & Admin Authentication
+* 📅 Multi-step Appointment Booking
+* 🤖 AI Voice Agent
+* 📧 Email Notifications
+* 💳 Payment Integration
+* 📊 Admin Dashboard
+* 🧾 Invoice System
+* 🔐 Secure Role-Based Access
+
+---
+
+## 📸 Screenshots
+
+### 🏠 Landing Page
+
+<p align="center">
+  <img src="./screenshots/Landing-page1.png" width="30%" />
+  <img src="./screenshots/Landing-page2.png" width="30%" />
+  <img src="./screenshots/Landing-page3.png" width="30%" />
+  <img src="./screenshots/Landing-page4.png" width="30%" />
+  <img src="./screenshots/Landing-page5.png" width="30%" />
+  
+</p>
+
+---
+
+### 🧑‍💼 Admin Page
+
+<p align="center">
+  <img src="./screenshots/Admin-Page.png" width="30%" />
+</p>
+
+---
+
+### 📊 Dashboard
+
+<p align="center">
+  <img src="./screenshots/dashboard.png" width="30%" />
+  
+</p>
+
+---
+
+### 💳 Pro Page
+
+<p align="center">
+  <img src="./screenshots/Pro-Page.png" width="30%" />
+</p>
+
+---
+
+### 🎙️ Voice Page
+
+<p align="center">
+  <img src="./screenshots/Voice-Page.png" width="30%" />
+</p>
+
+---
+
+## 🛠️ Tech Stack
+
+**Frontend**
+
+* React.js
+* Tailwind CSS
+
+**Backend**
+
+* Node.js
+* Express.js
+
+**Database**
+
+* PostgreSQL
+* Prisma ORM
+
+
+**Services**
+
+* Clerk (Authentication)
+* Stripe (Payments)
+* Email Service
+
+**State Management and Data Fetching**
+
+* TanStack React Query
+
+**Form Handling & Validation**
+
+* React Hook Form
+* Zod
+
+**AI Integration**
+
+* Vapi AI
+
+---
+
+## 🧠 Architecture
+
+* REST API backend
+* Component-based frontend
+* Secure authentication
+* Scalable database
+
+---
+
+## ⚙️ Installation
 
 ```bash
+git clone https://github.com/your-username/dentwise.git
+cd dentwise
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 📂 Project Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
+dentwise/
+│── client/
+│── server/
+│── screenshots/
+│── components/
+│── routes/
+```
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## 🎯 Key Learnings
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+* Built real-world SaaS system
+* Integrated auth + payments
+* Designed scalable backend
+* Improved UI/UX
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## 🔮 Future Improvements
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+* 📱 Mobile optimization
+* 🧠 Advanced AI features
+* 📊 Analytics dashboard
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+## 👨‍💻 Author
+
+Aaditya Raj Joshi
+
+---
+
+## ⭐ Support
+
+If you like this project, give it a ⭐ on GitHub!
