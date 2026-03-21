@@ -37,10 +37,10 @@ DentWise solves this by providing an automated, scalable, and intelligent system
 
 <p align="center">
   <img src="./screenshots/Landing-page1.png" width="30%" />
-  <img src="./screenshots/Landing-page2.png" width="30%" />
-  <img src="./screenshots/Landing-page3.png" width="30%" />
-  <img src="./screenshots/Landing-page4.png" width="30%" />
-  <img src="./screenshots/Landing-page5.png" width="30%" />
+  <img src="./screenshots/Landing-Page2.png" width="30%" />
+  <img src="./screenshots/Landing-Page3.png" width="30%" />
+  <img src="./screenshots/Landing-Page4.png" width="30%" />
+  <img src="./screenshots/Landing-Page5.png" width="30%" />
   
 </p>
 
