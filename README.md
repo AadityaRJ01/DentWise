@@ -36,12 +36,17 @@ DentWise solves this by providing an automated, scalable, and intelligent system
 ### 🏠 Landing Page
 
 <p align="center">
-  <img src="./screenshots/Landing-page1.png" width="30%" />
-  <img src="./screenshots/Landing-Page2.png" width="30%" />
-  <img src="./screenshots/Landing-Page3.png" width="30%" />
-  <img src="./screenshots/Landing-Page4.png" width="30%" />
-  <img src="./screenshots/Landing-Page5.png" width="30%" />
-  
+  <img src="./screenshots/Landing-page1.png" width="80%" />
+</p>
+
+<p align="center">
+  <img src="./screenshots/Landing-Page2.png" width="45%" />
+  <img src="./screenshots/Landing-Page3.png" width="45%" />
+</p>
+
+<p align="center">
+  <img src="./screenshots/Landing-Page4.png" width="45%" />
+  <img src="./screenshots/Landing-Page5.png" width="45%" />
 </p>
 
 ---
@@ -49,7 +54,7 @@ DentWise solves this by providing an automated, scalable, and intelligent system
 ### 🧑‍💼 Admin Page
 
 <p align="center">
-  <img src="./screenshots/Admin-Page.png" width="30%" />
+  <img src="./screenshots/Admin-Page.png" width="70%" />
 </p>
 
 ---
@@ -57,8 +62,7 @@ DentWise solves this by providing an automated, scalable, and intelligent system
 ### 📊 Dashboard
 
 <p align="center">
-  <img src="./screenshots/dashboard.png" width="30%" />
-  
+  <img src="./screenshots/dashboard.png" width="70%" />
 </p>
 
 ---
@@ -66,7 +70,7 @@ DentWise solves this by providing an automated, scalable, and intelligent system
 ### 💳 Pro Page
 
 <p align="center">
-  <img src="./screenshots/Pro-Page.png" width="30%" />
+  <img src="./screenshots/Pro-Page.png" width="70%" />
 </p>
 
 ---
@@ -74,9 +78,8 @@ DentWise solves this by providing an automated, scalable, and intelligent system
 ### 🎙️ Voice Page
 
 <p align="center">
-  <img src="./screenshots/Voice-Page.png" width="30%" />
+  <img src="./screenshots/Voice-Page.png" width="70%" />
 </p>
-
 ---
 
 ## 🛠️ Tech Stack
